@@ -1,10 +1,13 @@
 import React,  { Component } from 'react';
 import './login-form.css';
+import {Link} from 'react-router-dom';
 
 export default class LoginForm extends Component {
     render() {
         return (
             <form className="form-signin">
+
+            
 
                 <div className="form-input">
                 <input type="email" class="form-control" name="email" placeholder="Email"/>
@@ -13,7 +16,7 @@ export default class LoginForm extends Component {
                 <div className="form-input">
                 <input type="password" class="form-control" name="password" placeholder="Password"/>
                 </div>   
-
+               
                 <div className="form-input checkbox text-center">
                 <label htmlFor="remember-pwd"><input type="checkbox"/> Remember Password</label>
                 </div>
@@ -23,7 +26,7 @@ export default class LoginForm extends Component {
                 </div>
 
                 <div className="forgot-pwd text-center">
-                <a href="#">Forgot your password?</a>
+                <Link to="/forget-passwd"> Forgot your passsword?</Link>
                 </div>
 
                 <div className="seperator"></div>

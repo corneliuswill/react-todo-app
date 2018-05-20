@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import logo from './todo-logo.png';
+import logo from '../todo-logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import './css/app.css';
-import './css/core-ui.css';
-import LoginForm from './components/login-form/login-form';
+import '../css/app.css';
+import LoginForm from '../components/login-form/login-form';
 
-class App extends Component {
+class Login extends Component {
   componentDidMount() {
 
   }
@@ -20,7 +19,7 @@ class App extends Component {
               <div className="product-branding text-center">
                 <div className="logo">
                   <div className="app-icon">
-                    <img src={logo}/>
+                    <img src={logo} alt="logo"/>
                   </div>
                 </div>
                 <h1 className="product-name">My Todo</h1>
@@ -34,4 +33,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Login;

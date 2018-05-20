@@ -1,0 +1,29 @@
+body {
+
+}
+
+.greeting {
+    color: #FFF;
+}
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+nav a, button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+bg-blue-green {
+    background: linear-gradient(to bottom, rgba(21,123,143,1) 0%, rgba(53,172,156,1) 100%);
+}
+
+/* Buttons */
+button.primary {
+    width: 327px;
+    height: 48px;
+}
